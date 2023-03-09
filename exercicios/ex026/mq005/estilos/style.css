@@ -7,6 +7,11 @@
     padding: 0px;
 }
 
+body, html
+{
+    background-color: lightgrey;
+}
+
 header
 {
     background-color: rgb(148, 148, 148);
@@ -18,9 +23,25 @@ header > h1
     text-align: center;
 }
 
+span#burguer
+{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover
+{
+    background-color: white;
+    color: black;
+}
+
 menu
 {
-    display: block;
+    display: none;
 }
 
 menu > ul 
@@ -28,7 +49,7 @@ menu > ul
     list-style-type: none;
 }
 
-menu a
+menu > ul > li > a
 {
     display: block;
     padding: 10px;
@@ -39,7 +60,7 @@ menu a
     border-top: 2px solid gray;
 }
 
-menu a:hover
+menu > ul > li > a:hover
 {
     background-color: gray;
 }
@@ -54,12 +75,12 @@ main
     border-radius: 10px;
 }
 
-article h2 
+article > h2 
 {
     padding-bottom: 20px;
 }
 
-article p 
+article > p 
 {
     text-align: justify;
     margin-bottom: 20px;
